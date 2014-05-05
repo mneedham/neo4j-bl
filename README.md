@@ -1,4 +1,4 @@
-# Hands on build your first Neo4j app for Java developers
+# Build your first Neo4j app using a British Library dataset
 
 The British Library have released over a million images into the public domain. 
 
