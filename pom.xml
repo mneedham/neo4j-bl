@@ -15,6 +15,12 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.sun.jersey</groupId>
+      <artifactId>jersey-client</artifactId>
+      <version>1.18.1</version>
+    </dependency>
+
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
@@ -63,6 +69,12 @@
     <repository>
       <id>repo.bodar.com</id>
       <url>http://repo.bodar.com</url>
+    </repository>
+
+    <repository>
+      <id>neo4j-maven</id>
+      <name>neo4j maven</name>
+      <url>http://m2.neo4j.org</url>
     </repository>
   </repositories>
 
