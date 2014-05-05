@@ -1,3 +1,5 @@
+# Hands on build your first Neo4j app for Java developers
+
 We're going to working with [a data set](https://github.com/BL-Labs/imagedirectory) released by the British Library
 
 You can read more about the project in [a British Library blog post](http://britishlibrary.typepad.co.uk/digital-scholarship/2013/12/a-million-first-steps.html)
