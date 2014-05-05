@@ -1,7 +1,5 @@
 package org.neo4j.bl.web;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.HashMap;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

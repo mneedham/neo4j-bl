@@ -12,6 +12,13 @@ We're going to working with [a data set containing meta data around these images
 
 This will create a 'data' directory containing one file - 'book_metadata.json'
 
+## Starting web app
+
+````
+mvn package
+java -jar target/neo4j-bl-1.0-SNAPSHOT.jar server
+````
+
 ## Pre requisites
 
 * [IntelliJ IDEA Community Edition](http://www.jetbrains.com/idea/download/)
