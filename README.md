@@ -12,6 +12,14 @@ We're going to working with [a data set containing meta data around these images
 
 This will create a 'data' directory containing one file - 'book_metadata.json'
 
+
+## Importing data
+
+````
+mvn package
+./import.sh data/book_metadata.json
+````
+
 ## Starting web app
 
 ````
