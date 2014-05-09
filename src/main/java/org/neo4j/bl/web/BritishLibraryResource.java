@@ -24,9 +24,9 @@ public class BritishLibraryResource
     @Timed
     public HomeView index()
     {
-        HashMap<String, Object> properties = new HashMap<>();
+        HashMap<String, Object> parameters = new HashMap<>();
 
-        JsonNode result = neo4j.query( "MATCH (n) RETURN n LIMIT 5", properties );
+        JsonNode result = neo4j.query( "MATCH (n) RETURN n LIMIT 5", parameters );
 
         return new HomeView();
     }

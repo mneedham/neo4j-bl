@@ -18,7 +18,7 @@ public class BritishLibraryApplication extends Application<BritishLibraryConfigu
     @Override
     public String getName()
     {
-        return "The Tube Graph";
+        return "British Library Meta Data";
     }
 
     @Override
