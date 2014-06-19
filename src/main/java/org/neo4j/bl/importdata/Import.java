@@ -1,7 +1,9 @@
 package org.neo4j.bl.importdata;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,11 +23,20 @@ public class Import
         ObjectMapper mapper = new ObjectMapper();
         JsonNode localeTemp = mapper.readTree(new File(importFile));
 
-        for ( int i = 0; i < 5; i++ )
+        PrintWriter out = new PrintWriter( new FileWriter( "data/book.csv" ) );
+
+        out.write( "identifier,place\n" );
+
+        for ( int i = 0; i < localeTemp.size(); i++ )
         {
             JsonNode row = localeTemp.get( i );
-            System.out.println( row );
+
+            String place = row.get( "place" ).asText();
+            String identifier = row.get( "identifier" ).asText();
+
+            out.write( "\"" + identifier + "\",\"" + place + "\"\n" );
         }
+        out.close();
 
         System.out.println("Finished import.");
     }
